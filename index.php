@@ -28,23 +28,23 @@
     <div class="navbar">
       <div class="navbar__wrapper">
         <nav class="navbar__menu"><a class="navbar__brand" href="siteHome.html">Sistema de Entrada<img src="#" alt=""/></a>
-          <div id="nav-icon3"><span></span><span></span><span></span><span></span></div>
+          <div id="nav-icon3"></div>
         </nav>
       </div>
     </div>
 
   </div>
   <div class="container">
-    <form>
+    <form action="./controllers/auth_controller.php" method="POST">
       <div class="group">
-        <input required type="text"><span class="highlight"></span><span class="bar"></span>
+        <input required name="email" type="text"><span class="highlight"></span><span class="bar"></span>
         <label>Usuário</label>
       </div>
       <div class="group">
-        <input required type="password"><span class="highlight"></span><span class="bar"></span>
+        <input required name="senha" type="password"><span class="highlight"></span><span class="bar"></span>
         <label>Senha</label>
       </div>
-      <button type="button" class="button buttonBlue">Entrar
+      <button type="submit" class="button buttonBlue">Entrar
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
       </button>
     </form>

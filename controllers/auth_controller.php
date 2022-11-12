@@ -5,17 +5,13 @@
     $senha = md5($_POST['senha']);
 
     $sql = "SELECT * FROM users 
-    WHERE email = '$email' AND senha = '$senha'";
+    WHERE email = '$email' AND senha = '".md5($senha)."'";
     
-    $result = $conexao->query($sql);
-    var_dump(mysqli_fetch_array($result));
-    if (sizeof(mysqli_fetch_array($result)) > 0) {
-        echo "Login encontrado";
+    $result = $connect->query($sql);
+    if ($result->num_rows > 0) {
+        header("Location: ../index.php");
     } else {
-        echo "login não encontrado";    
+        header("Location: ../index.php");
     }
     mysqli_close($connect);
-?>
 
-
-$result = $conexao->query($sql);
