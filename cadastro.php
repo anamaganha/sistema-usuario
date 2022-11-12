@@ -35,42 +35,42 @@
 
   </div>
   <div class="container">
-    <form>
+    <form action="./controllers/cadastro_controller.php" method="POST">
       <div class="group">
-        <input required type="text"><span class="highlight"></span><span class="bar"></span>
+        <input required name="nome" type="text"><span class="highlight"></span><span class="bar"></span>
         <label>Nome Completo</label>
       </div>
       <div class="group-container">
         <div class="group">
-            <input required type="text"><span class="highlight"></span><span class="bar"></span>
+            <input required name="endereco" type="text"><span class="highlight"></span><span class="bar"></span>
             <label>Endereço</label>
         </div>
         <div class="group">
-            <input required type="number"><span class="highlight"></span><span class="bar"></span>
+            <input required name="numero" type="number"><span class="highlight"></span><span class="bar"></span>
             <label>Número</label>
         </div>
       </div>
       
       <div class="group">
-        <input required type="text"><span class="highlight"></span><span class="bar"></span>
+        <input required name="tipo_cliente" type="text"><span class="highlight"></span><span class="bar"></span>
         <label>Tipo de Cliente</label>
       </div>
       <div class="group">
-        <input required type="text"><span class="highlight"></span><span class="bar"></span>
+        <input required name="cpf" type="text"><span class="highlight"></span><span class="bar"></span>
         <label>CPF</label>
       </div>
       <div class="group-container">
       <div class="group">
-        <input required type="text"><span class="highlight"></span><span class="bar"></span>
+        <input required name="cidade" type="text"><span class="highlight"></span><span class="bar"></span>
         <label>Cidade</label>
       </div>
       <div class="group">
         <div class="wrap">
             <div class="select__wrapper">
-                <select class="select" name="" id="" required>
+                <select class="select" name="uf" id="" required >
                 <option value="" disabled selected></option>
-                <option value="Value 1">Value 1</option>
-                <option value="Value 2">Value 2</option>
+                <option value="PR">PR</option>
+                <option value="SP">SP</option>
                 </select>
                 <label class="select__label">Choose service</label>
             </div>
@@ -79,15 +79,15 @@
       </div>
       </div>
       <div class="group">
-        <input required type="text"><span class="highlight"></span><span class="bar"></span>
+        <input required name="telefone" type="text"><span class="highlight"></span><span class="bar"></span>
         <label>Telefone</label>
       </div>
       <div class="group">
-        <input required type="text"><span class="highlight"></span><span class="bar"></span>
+        <input required name="inscricao" type="text"><span class="highlight"></span><span class="bar"></span>
         <label>Inscrição Estadual</label>
       </div>
      
-      <button type="button" class="button buttonBlue">Cadastrar
+      <button type="submit" class="button buttonBlue">Cadastrar
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
       </button>
     </form>
