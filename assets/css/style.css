@@ -35,7 +35,7 @@ form a {
 /* LOGIN E CADASTRO */
 
 form {
-	width: 380px;
+	width: 480px;
 	margin: 4em auto;
 	padding: 3em 2em 2em 2em;
 	background: #fafafa;
@@ -45,7 +45,6 @@ form {
 
 .group-container {
 	display: flex;
-	
 }
 
 .group { 

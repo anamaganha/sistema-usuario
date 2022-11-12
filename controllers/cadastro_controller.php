@@ -13,11 +13,13 @@
     $email = $_POST['email'];
     $senha = md5($_POST['senha']);
 
-    $sql = "INSERT INTO users VALUES 
+    $sql = "INSERT INTO users (nome, endereco, numero, tipo_cliente, cpf, cidade, uf, telefone, inscricao, email, senha) VALUES 
     ('$nome','$endereco','$numero','$tipo_cliente','$cpf','$cidade','$uf','$telefone','$inscricao','$email','$senha')";
- 
+    echo $sql;
+
     if (mysqli_query($connect, $sql)) {
-        echo "Usuario Cadastrado com Sucesso";
+        echo "<script type='javascript'>alert('Cadastro realizado com sucesso!');";
+        header("Location: ../index.php");
     } else {
         echo "Erro ".mysqli_connect_error($connect);    
     }

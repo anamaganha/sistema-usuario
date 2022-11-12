@@ -50,10 +50,17 @@
             <label>Número</label>
         </div>
       </div>
-      
       <div class="group">
-        <input required name="tipo_cliente" type="text"><span class="highlight"></span><span class="bar"></span>
-        <label>Tipo de Cliente</label>
+        <div class="wrap">
+            <div class="select__wrapper">
+                <select class="select" name="tipo_cliente" id="" required >
+                <option value="" disabled selected></option>
+                <option value="pessoa_fisica">Pessoa física</option>
+                <option value="pessoa_juridica">Pessoa jurídica</option>
+                </select>
+                <label class="select__label">Tipo Cliente</label>
+            </div>
+        </div>
       </div>
       <div class="group">
         <input required name="cpf" type="text"><span class="highlight"></span><span class="bar"></span>
@@ -72,10 +79,9 @@
                 <option value="PR">PR</option>
                 <option value="SP">SP</option>
                 </select>
-                <label class="select__label">Choose service</label>
+                <label class="select__label">UF</label>
             </div>
-            </div>
-        <label>UF</label>
+          </div>
       </div>
       </div>
       <div class="group">

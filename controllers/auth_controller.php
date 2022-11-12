@@ -8,6 +8,7 @@
     WHERE email = '$email' AND senha = '$senha'";
     
     $result = $conexao->query($sql);
+    var_dump(mysqli_fetch_array($result));
     if (sizeof(mysqli_fetch_array($result)) > 0) {
         echo "Login encontrado";
     } else {
