@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS sis_web;
 USE sis_web;
 
 CREATE TABLE IF NOT EXISTS users (
-	id int not null primary key,
+	id int not null primary key auto_increment,
     email varchar(100) not null,
 	senha varchar(100) not null,
 	nome varchar(100) not null,
@@ -16,3 +16,7 @@ CREATE TABLE IF NOT EXISTS users (
 	telefone varchar(100) not null,
 	inscricao varchar(100) not null	
 );
+
+SELECT * FROM users;
+
+SELECT * FROM users  WHERE email = 'horus.cristain@gmail.com' AND senha = 'd9b1d7db4cd6e70935368a1efb10e377';

@@ -9,7 +9,7 @@
     
     $result = $connect->query($sql);
     if ($result->num_rows > 0) {
-        header("Location: ../index.php");
+        header("Location: ../clientes.php");
     } else {
         header("Location: ../index.php");
     }
