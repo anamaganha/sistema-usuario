@@ -86,7 +86,14 @@
         <input required name="inscricao" type="text"><span class="highlight"></span><span class="bar"></span>
         <label>Inscrição Estadual</label>
       </div>
-     
+      <div class="group">
+        <input required name="email" type="email"><span class="highlight"></span><span class="bar"></span>
+        <label>Email</label>
+      </div>
+      <div class="group">
+        <input required name="senha" type="password"><span class="highlight"></span><span class="bar"></span>
+        <label>Senha</label>
+      </div>
       <button type="submit" class="button buttonBlue">Cadastrar
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
       </button>

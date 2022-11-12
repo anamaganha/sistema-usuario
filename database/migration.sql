@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS sys;
+CREATE DATABASE IF NOT EXISTS sis_web;
 
-USE sys;
+USE sis_web;
 
 CREATE TABLE IF NOT EXISTS users (
 	id int(100) not null primary key,

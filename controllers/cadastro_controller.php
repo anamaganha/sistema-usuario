@@ -1,5 +1,4 @@
 <?php
-    // Incluir o arquivo de conexao no programa
     include("./connect.php");
 
     $nome = $_POST['nome'];
