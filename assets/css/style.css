@@ -392,13 +392,14 @@ input:focus ~ .highlight {
 
 
   .select {
-	width: 60%;
+	width: 100%;
 	border-top: none;
 	border-left: none;
 	border-right: none;
 	border-bottom: 1px solid #9E9E9E;
 	appearance: none;
 	-webkit-appearance: none;
+  background-color: transparent;
   }
   .select:focus {
 	outline: none;
@@ -428,7 +429,7 @@ input:focus ~ .highlight {
   }
   
   .select:focus ~ .select__label, .select:valid ~ .select__label {
-	color: red;
+
 	transform: translateY(-25px);
 	font-size: 14px;
   }

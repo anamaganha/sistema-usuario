@@ -67,12 +67,12 @@
         <label>CPF</label>
       </div>
       <div class="group-container">
-      <div class="group">
+      <div class="group" style="width:85%;">
         <input required name="cidade" type="text"><span class="highlight"></span><span class="bar"></span>
         <label>Cidade</label>
       </div>
-      <div class="group">
-        <div class="wrap">
+      <div class="group" style="width:14%;">
+        <div class="wrap" style="  margin-top: 1.5em;">
             <div class="select__wrapper">
                 <select class="select" name="uf" id="" required >
                 <option value="" disabled selected></option>
