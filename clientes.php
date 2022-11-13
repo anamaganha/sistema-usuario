@@ -51,7 +51,7 @@
   <div class="container">
     <div class="topo">
   <form class="search-form">
-  <input type="search" value="" placeholder="Procurar cliente" class="search-input">
+  <input type="search" value=""  id="myInput" placeholder="Procurar cliente" class="search-input">
   <button type="submit" class="search-button">
     <svg class="submit-button">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
