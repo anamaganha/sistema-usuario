@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Trabalho | Login</title>
+  <title>Trabalho | Início</title>
   <meta name="description" content="Trabalho de Implementação Web">
   <meta name="author" content="Ana Maganha e Horus Christian">
 
