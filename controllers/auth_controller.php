@@ -5,7 +5,7 @@
     $senha = md5($_POST['senha']);
 
     $sql = "SELECT * FROM users 
-    WHERE email = '$email' AND senha = '".md5($senha)."'";
+    WHERE email = '$email' AND senha = '".$senha."'";
     
     $result = $connect->query($sql);
     if ($result->num_rows > 0) {

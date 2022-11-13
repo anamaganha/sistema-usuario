@@ -47,6 +47,9 @@
       <button type="submit" class="button buttonBlue">Entrar
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
       </button>
+      <div class="criar-conta">
+        <a href="./cadastro.php" >criar conta</a>
+      </div>
     </form>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
